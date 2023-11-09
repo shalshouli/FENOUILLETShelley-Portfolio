@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <main>
+    <section class="cadre">
+      <h1>Contactez moi</h1>
+      <form>
+
+        <div class="form-name">
+          <div class="form-first-name">
+            <label for="firstName">Prénom</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Votre prénom">
+          </div>
+          <div class="form-last-name">
+            <label for="lastName">Nom</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Votre Nom">
+          </div>
+        </div>
+
+        <div class="form-phone">
+          <label for="phoneNumber">Numéro de téléphone</label>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+33122334455">
+        </div>
+
+        <div class="form-mail">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" name="email" id="email" placeholder="exemple@gmail.com">
+        </div>
+
+        <div class="form-message">
+          <label for="message">Votre message</label>
+          <textarea name="message" rows="10" cols="30" placeholder="Entrer votre message ici..."></textarea>
+        </div>
+
+        <input type="button" value="Envoyer">
+      </form>
+    </section>
+    <div class="nav">
+      <div class="menu">
+        <a class="menuItem" href="index.html">Home</a>
+        <a class="menuItem" href="projets.html">Projets</a>
+      </div>
+    </div>
+    <button class="hamburger">
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

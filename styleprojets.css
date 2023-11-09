@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3D4F80;
+}
+
+.nav {
+  height: 500px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  right: 5px;
+  bottom: 200px;
+  padding-right: 15px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #8C99BF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  flex-direction: row;
+}
+
+a:hover {
+  color: #FFF2D1;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-content: end;
+}
+
+/*Carrousel*/
+
+.slidershow {
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border-radius: 8px;
+  border: 2px solid #D1DDFF;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover {
+  background: #AA996E;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked~.s1 {
+  margin-left: 0;
+}
+
+#r2:checked~.s1 {
+  margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+  margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+  margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+  margin-left: -80%;
+}
+
+/* Média queries*/
+
+@media screen and (max-width: 1024px) {
+  .slidershow {
+    max-width: 900px;
+    max-height: 600px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .slidershow {
+    max-width: 700px;
+    max-height: 400px;
+    overflow: hidden;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  
+}
+
+@media screen and (max-width: 767px) {
+  .slidershow {
+    max-width: 500px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+}

@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+/* Page d'accueil */
+
+body {
+  background-color: #3D4F80;
+}
+
+.name {
+  color: #AA996E;
+  justify-content: flex-end;
+  font-family: 'Paytone One', sans-serif;
+  font-size: larger;
+  padding-left: 80%;
+}
+
+header {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Logo {
+  margin: 15px;
+  width: 110px;
+  height: 125px;
+}
+
+a {
+  text-decoration: none;
+  color: #D1DDFF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #FFF2D1;
+}
+
+.title {
+  color: #D1DDFF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 120px;
+  margin: 0px;
+  padding-left: 25%;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  height: 500px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 15px;
+  letter-spacing: 3px;
+}
+
+.bleu {
+  color: #8C99BF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: larger;
+}
+
+.blanc {
+  color: #AA996E;
+  font-family: 'Paytone One', sans-serif;
+  font-size: larger;
+}
+
+footer {
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+/* Page contact */
+
+form {
+  padding: 0px 80px 30px 80px;
+}
+
+.form-name {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.form-first-name,
+.form-last-name,
+.form-phone,
+.form-mail,
+.form-message {
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 30px;
+}
+
+.form-phone,
+.form-mail {
+  padding-bottom: 30px;
+}
+
+.cadre {
+  width: 850px;
+  height: 850px;
+  flex-shrink: 0;
+  border-radius: 63px;
+  background: #D1DDFF;
+  text-align: center;
+  margin-left: 500px;
+}
+
+h1 {
+  color: #8C99BF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  padding-top: 24px;
+  padding-bottom: 0px;
+}
+
+label {
+  color: #3D4F80;
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+input[type=text] {
+  width: 280px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+  display: inline;
+}
+
+#lastName,
+#firstName {
+  display: inline;
+  padding: inherit;
+}
+
+input[type=button] {
+  border-radius: 35px;
+  background: #AA996E;
+  width: 230px;
+  height: 68px;
+  color: #FFF;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 28px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 0.5px solid #3D4F80;
+}
+
+input[type=email] {
+  width: 645px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+}
+
+input[type=tel] {
+  width: 645px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  background: #FFF;
+  font-family: 'Inter';
+  display: block;
+  resize: none;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+textarea::placeholder {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
+/* Média queries*/
+
+@media screen and (min-width: 1025px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu a {
+    padding-top: 50px;
+    margin-top: 40px;
+  }
+  }
+    
+
+@media screen and (max-width: 1024px) {
+.cadre {
+  margin-left: 75px;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 10%;
+  padding: 4px;
+  border: black solid 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+  .title {
+    font-size: 90px;
+    margin: 0px;
+    padding-left: 20%;
+    text-align: center;
+  }
+
+  .name {
+    font-size: larger;
+    padding-left: 70%;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .cadre {
+    width: 650px;
+    height: 700px;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+
+  h1 {
+    font-size: 36px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+
+  label {
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
+  .menu a{
+    padding-top: 75px;
+    margin-top: 60px;
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+  input[type=text], 
+  input[type=tel],
+  input[type=email],
+  input[type=message] 
+  {
+    width: 180px !important;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    background: #FFF;
+    display: inline;
+  }
+  .menu {
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 60px;
+    margin: 0px;
+    padding-left: 15%;
+    text-align: center;
+  }
+
+  .name {
+    font-size: larger;
+    padding-left: 60%;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  .cadre {
+    width: 450px;
+    height: 750px;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+
+  label {
+    font-size: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  input[type=text], 
+  input[type=tel],
+  input[type=email],
+  input[type=message] 
+  {
+    width: 180px !important;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+    background: #FFF;
+    display: inline;
+  }
+
+  .form-name {
+    display: block;
+  }
+
+  .form-first-name {
+    padding-bottom: 10px;
+  }
+
+  
+  .menu a{
+    padding-top: 75px;
+    margin-top: 60px;
+  }
+
+  .menu {
+    padding-right: 20px;
+  }
+}
